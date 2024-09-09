@@ -12,6 +12,20 @@
 // Output: (to the command line) A brief message the displays the distance between the two
 // coordinates and the perimeter, area, width, and height of the city 
 // //********************************************************
+//********************************************************
+// fracturing.c
+// Author: Praanadah Mudam
+// UCFID:5651276
+// Date: 9/08/24
+// Class: COP 3223C, Professor Parra
+// Purpose: This program allows the user to input coordinate
+// points into the code to get the area, perimeter, height and width.
+// The goal was to be able to fracture your code and reducance redundacies within it.
+// Input: The user is required to inout two coordinate points on the
+//x-y plane to be calculated.
+// Output: (to the command line) A brief message the displays the distance between the two
+// coordinates and the perimeter, area, width, and height of the city 
+// //********************************************************
 #include <stdio.h>
 #include <math.h>
 
@@ -24,7 +38,7 @@ void inputCoordinates(double *x1, double *y1, double *x2, double *y2) {
     scanf("%lf", x1);
     printf("Enter a value: ");
     scanf("%lf", y1);
-    printf("Enter coordinates for Point #2 (x2 y2):\n");
+    printf("Enter coordinates for Point #2 (x2 y2):");
     printf("Enter a value: ");
     scanf("%lf", x2); 
     printf("Enter a value: ");
