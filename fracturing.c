@@ -47,25 +47,26 @@ void inputCoordinates(double *x1, double *y1, double *x2, double *y2) {
 
 // Function to calculate distance between two points
 double calculateDistance(double x1, double y1, double x2, double y2) {
-    return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+    double dx = x2 - x1;
+    double dy = y2 - y1;
+    return sqrt(dx * dx + dy * dy);
 }
-
 // Function to calculate radius
 double calculateRadius(double distance) {
-    return distance / 2;
+    return distance / 2.0;
 }
 
-// Function to calculate circle perimeter
+// Function to calculate circle perimeter (circumference)
 double calculatePerimeter(double radius) {
     return 2 * PI * radius;
 }
 
 // Function to calculate circle area
 double calculateArea(double radius) {
-    return PI * pow(radius, 2);
+    return PI * radius * radius;
 }
 
-// Function to calculate circle diameter (width/height)
+// Function to calculate circle diameter
 double calculateDiameter(double radius) {
     return 2 * radius;
 }
