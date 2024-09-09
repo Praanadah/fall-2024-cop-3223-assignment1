@@ -43,16 +43,12 @@ double calculateRadius(double distance) {
 }
 
 // Function to calculate circle perimeter (circumference)
-double calculatePerimeter() {
-    double distance = calculate_distance()
-    double radius = distance / 2.0
+double calculatePerimeter(double radius) {
     return 2 * PI * radius;
 }
 
 // Function to calculate circle area
-double calculateArea() {
-    double distance = calculate_distance()
-    double radius = distance / 2.0
+double calculateArea(double radius) {
     return PI * radius * radius;
 }
 
