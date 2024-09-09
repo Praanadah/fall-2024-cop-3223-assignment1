@@ -12,20 +12,6 @@
 // Output: (to the command line) A brief message the displays the distance between the two
 // coordinates and the perimeter, area, width, and height of the city 
 // //********************************************************
-//********************************************************
-// fracturing.c
-// Author: Praanadah Mudam
-// UCFID:5651276
-// Date: 9/08/24
-// Class: COP 3223C, Professor Parra
-// Purpose: This program allows the user to input coordinate
-// points into the code to get the area, perimeter, height and width.
-// The goal was to be able to fracture your code and reducance redundacies within it.
-// Input: The user is required to inout two coordinate points on the
-//x-y plane to be calculated.
-// Output: (to the command line) A brief message the displays the distance between the two
-// coordinates and the perimeter, area, width, and height of the city 
-// //********************************************************
 #include <stdio.h>
 #include <math.h>
 
@@ -57,12 +43,16 @@ double calculateRadius(double distance) {
 }
 
 // Function to calculate circle perimeter (circumference)
-double calculatePerimeter(double radius) {
+double calculatePerimeter() {
+    double distance = calculate_distance()
+    double radius = distance / 2.0
     return 2 * PI * radius;
 }
 
 // Function to calculate circle area
-double calculateArea(double radius) {
+double calculateArea() {
+    double distance = calculate_distance()
+    double radius = distance / 2.0
     return PI * radius * radius;
 }
 
